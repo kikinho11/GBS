@@ -1,0 +1,19 @@
+body {
+  background-color: #222222;
+}
+
+h1 {
+  color: aqua;
+}
+
+.img-center {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  display: block;
+}
