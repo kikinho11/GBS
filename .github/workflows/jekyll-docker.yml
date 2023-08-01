@@ -12,9 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v3.1.0
-      with: 
-        target_branch: main
-        build_dir: public
+    - name: Build Jekyll for GitHub Pages
+      uses: actions/jekyll-build-pages@v1.0.8
+
 
