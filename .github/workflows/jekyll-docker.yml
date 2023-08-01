@@ -14,5 +14,8 @@ jobs:
     steps:
     - name: Build Jekyll for GitHub Pages
       uses: actions/jekyll-build-pages@v1.0.8
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v2.0.3
+
 
 
