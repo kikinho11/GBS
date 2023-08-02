@@ -1,9 +1,9 @@
 .navbar {
+  background-color: rgb(6, 21, 81);
   color: #fff;
-  padding: 10px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navbar-brand {
@@ -18,16 +18,52 @@
   color: #fff;
 }
 
-.navbar-buttons {
+.nav-link {
+  color: white;
+  text-decoration: none;
   margin-right: 20px;
 }
 
-.navbar-buttons a {
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  text-align: right;
-  margin-right: 10px;
-  padding: 0px 20px;
+.nav-link:hover {
+  color: white;
+}
+
+/* Custom Classes */
+.overlay-brand {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.overlay-brand > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .overlay-brand {
+    width: 60%;
+    height: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay-brand {
+    width: 27%;
+    height: 17%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .overlay-brand {
+    width: 10%;
+    height: 10%;
+  }
 }
