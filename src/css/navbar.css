@@ -1,0 +1,33 @@
+.navbar {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-buttons {
+  margin-right: 20px;
+}
+
+.navbar-buttons a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 10px;
+  padding: 0px 20px;
+}
