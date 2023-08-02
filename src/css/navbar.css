@@ -14,18 +14,15 @@
   margin-left: 20px;
 }
 
-.navbar-brand:hover {
-  color: #fff;
-}
-
 .nav-link {
   color: white;
   text-decoration: none;
   margin-right: 20px;
+  font-weight: 600;
 }
 
 .nav-link:hover {
-  color: white;
+  color: #854DFF;
 }
 
 /* Custom Classes */
