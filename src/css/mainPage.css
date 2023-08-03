@@ -1,6 +1,19 @@
 body {
   font-family: 'Raleway', sans-serif;
-  color: black;
+}
+
+.center-div1 {
+  padding-top: 16vh;
+  padding-bottom: 16vh;
+}
+
+.center-div2 {
+  padding-top: 30vh;
+  padding-bottom: 16vh;
+}
+
+.bg-wave {
+  background-image: url("../img/waves.jpg");
 }
 
 /* .main-page {
