@@ -1,12 +1,9 @@
 body {
   font-family: 'Raleway', sans-serif;
-  overflow-y: scroll;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+  color: black;
 }
 
-.parent {
+/* .main-page {
   background-image: url("../img/waves.jpg");
   display: grid;
   position: relative;
@@ -18,24 +15,4 @@ body {
   background-color: rgb(20, 36, 128);
   color: white;
   z-index: -1;
-}
-
-.full-window-div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-  
-.div2 { 
-  grid-area: 5 / 2 / 6 / 5;
-}
-.div1 { 
-  grid-area: 1 / 2 / 5 / 5; 
-  font-weight: bold;
-  font-size: 55px;
-  padding-top: 30%;
-}
-.div3 { grid-area: 1 / 1 / 6 / 2; }
-.div4 { grid-area: 1 / 5 / 6 / 6; }
+} */

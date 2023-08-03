@@ -7,11 +7,9 @@
 }
 
 .navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
   color: #fff;
-  margin-left: 20px;
+  background-color: white;
+  height: 70px;
 }
 
 .nav-link {
@@ -23,44 +21,4 @@
 
 .nav-link:hover {
   color: #854DFF;
-}
-
-/* Custom Classes */
-.overlay-brand {
-  background-color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  box-sizing: border-box;
-}
-
-.overlay-brand > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-@media (max-width: 767px) {
-  .overlay-brand {
-    width: 60%;
-    height: 20%;
-  }
-}
-
-@media (min-width: 768px) {
-  .overlay-brand {
-    width: 27%;
-    height: 17%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .overlay-brand {
-    width: 10%;
-    height: 10%;
-  }
 }

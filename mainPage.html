@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website for the GBS Team">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link rel="stylesheet" href="./src/css/mainPage.css" type="text/css">
   <link rel="stylesheet" href="./src/css/navbar.css" type="text/css">
@@ -12,43 +13,60 @@
   <title>GBS IT Solutions</title>
   <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon"> <!-- Change this after new icon is on the icon folder -->
 </head>
-<body>
-  <div class="overlay-brand">
-    <img src="src/img/gbs.png"> <!-- Change this after new image is on the img folder -->
-  </div>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid justify-content-end">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre Nós</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Serviços</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cases de Sucesso</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-      </ul>
+
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <nav id="navScroll" class="navbar navbar-expand-lg sticky-top" tabindex="0" data-bs-theme="dark">
+    <div class="container">
+      <img class="navbar-brand img-fluid img-thumbnail" src="./src/img/gbs.png">
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Sobre Nós
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Serviços
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Cases de Sucesso
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Contato
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-   
-  <div class="parent full-window-div">
-    <!-- <img class="" src="src/img/waves.jpg"> -->
-    <div class="div2">
-      <a>Texto básico aqui para testar coisas</a>
-    </div>
-    <div class="div1">
-      <a>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+
+  <div class="w-100 overflow-hidden" style="height: 819px;">
+    <div class="container mw-100">
+      <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8 text-center mt-5" data-aos="fade">
+            <h1 class="">Lorem qualquer coisa</h1>
+            <h2 class="display-6 mb-5">Text</h2>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- Work in Progress -->
-  <!-- <div class="">
-    <a>Testing</a>
-  </div> -->
+
 </body>
 </html>
