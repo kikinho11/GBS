@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+body{
+    background-image: url("https://images2.alphacoders.com/104/thumb-1920-1042582.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.header{
+    font-family: "poppins", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5px;
+    background: transparent;
+    display: flex;
+    backdrop-filter: blur(3px);
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+} 
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.btn-1{
+    padding: 10px 20px;
+    border-radius: 8px;
+    letter-spacing: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-color: rgb(7, 198, 213);
+    box-shadow: 0 0 25px rgb(7, 198, 213);
+    border: none;
+    color: white;
+}
+
+.container button{
+    margin: 20px 20px;
+
+}
+.btn-1:hover{
+    box-shadow: 0 0 5px rgb(7, 198, 213),
+    0 0 25px rgb(7, 198, 213),
+    0 0 50px rgb(7, 198, 213),
+    0 0 100px rgb(7, 198, 213),
+    0 0 125px rgb(7, 198, 213);
+    color:black ;
+}
+
+.btn-2{
+    padding: 10px 20px;
+    border-radius: 8px;
+    letter-spacing: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 1px solid;
+    color: white;
+}
+
+.btn-2:hover{
+    box-shadow: 0 0 5px rgb(7, 198, 213),
+    0 0 25px rgb(7, 198, 213),
+    0 0 50px rgb(7, 198, 213),
+    0 0 100px rgb(7, 198, 213),
+    0 0 125px rgb(7, 198, 213);
+    color:rgb(7, 198, 213) ;
+}
