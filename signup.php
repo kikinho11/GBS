@@ -15,24 +15,37 @@
 
 <body style="height: 100%; background-color: #121212 ;">
   <div class="w-100 h-100 text-center center-div4">
-    <form class="text-white" method="post" action="include/signup.php">
+    <form class="text-white" method="post" action="include/signup.inc.php">
+      <input type="hidden" name="action" value="signup">
       <h1 style="padding-bottom: 50px;">Crie uma conta</h1>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-bottom: 15px;">
-        <input type="text" class="form-control" id="" name="username" placeholder="Seu nome:" style="font-weight: 900;">
+        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome:" style="font-weight: 900;">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="" name="email" placeholder="Seu email:">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email:">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="" name="password" placeholder="Sua password:">
+        <input type="password" class="form-control" id="password" name="password" placeholder="Sua password:">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="password" class="form-label">Repita password</label>
-        <input type="password" class="form-control" id="" name="password-repeat" placeholder="Repita a sua password:">
+        <input type="password" class="form-control" id="password-repeat" name="password-repeat" placeholder="Repita a sua password:">
       </div>
-      <button type="submit" class="btn btn-primary" value="create-account">Enviar</button>
+      <div class="col-4 position-relative start-50 end-50 translate-middle text-start text-center" style="padding-top: 10px;">
+        <?php
+
+          if(isset($_GET['error'])) {
+            if($_GET['error'] == "emptyfields") {
+              echo 'Empty Field';
+            }
+          }
+
+        ?>
+      </div>
+
+      <button type="submit" class="btn btn-primary" value="signup">Enviar</button>
     </form>
   </div>
 </body>
