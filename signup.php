@@ -15,8 +15,8 @@
 
 <body style="height: 100%; background-color: #121212 ;">
   <div class="w-100 h-100 text-center center-div4">
-    <form class="text-white" method="post" action="include/signup.inc.php">
-      <input type="hidden" name="action" value="signup">
+    <form class="text-white" action="./include/signup.inc.php" method="post">
+      <input type="hidden" name="signup" value="signup">
       <h1 style="padding-bottom: 50px;">Crie uma conta</h1>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-bottom: 15px;">
         <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome:" style="font-weight: 900;">
@@ -37,9 +37,30 @@
         <?php
 
           if(isset($_GET['error'])) {
-            if($_GET['error'] == "emptyfields") {
-              echo 'Empty Field';
+            
+            $errormessage = $_GET['error'];
+
+            if($errormessage == 'emptyfields') {
+              echo '<strong>Erro: </strong> Preencha todos os campos.';
             }
+            else if($errormessage == 'bademail') {
+              echo '<strong>Erro: </strong> Apenas utilize letras, numeros, underscore, pontos e traços.';
+            }
+            else if($errormessage == 'invalidemail') {
+              echo '<strong>Erro: </strong> Email inválido ou já está em uso.';
+            }
+            else if($errormessage == 'badname') {
+              echo '<strong>Erro: </strong> Apenas pode letras e espaços.';
+            }
+            else if($errormessage == 'passwordcheck') {
+              echo '<strong>Erro: </strong> Confirme a password.';
+            }
+            else if($errormessage == 'sqlerror') {
+              echo '<strong>Erro: </strong> Problema com conexão ao servidor.';
+            }
+          }
+          else if (isset($_GET['signup']) == 'success') {
+            echo '<strong>Conta criada com Sucesso</strong>';
           }
 
         ?>
