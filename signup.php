@@ -24,7 +24,7 @@
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Seu email:">
+        <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="password" class="form-label">Password</label>
