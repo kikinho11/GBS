@@ -27,6 +27,18 @@
         header("Location: ../signup.php?error=badname");
         exit();
     }
+    // Massive regex to filter letters, numbers and special caracters.
+    /*
+      (?=.*[A-Z]) - Forces the user to use at least one Capital Letter
+      (?=.*[a-z]) - Forces the user to use at least one lowercase letter
+      (?=.*\d) - Forces the user to use at least one number
+      (?=.*[!@#$%^&_*-]) - Forces the user to use at least one special character
+    */
+    else if (!preg_match("/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&_*-])[A-Za-z\d!@#$%^&_*-]{8,20}$/", $password ))
+    {
+        header("Location: ../signup.php?error=badpassword");
+        exit();
+    }
     else if ($password !== $passwordRepeat)
     {
         header("Location: ../signup.php?error=passwordcheck");

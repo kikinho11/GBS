@@ -15,11 +15,12 @@
 
 <body style="height: 100%; background-color: #121212 ;">
   <div class="w-100 h-100 text-center center-div4">
-    <form class="text-white" action="./include/signup.inc.php" method="post">
+    <form class="text-white text-center center-div4" action="./include/signup.inc.php" method="post">
       <input type="hidden" name="signup" value="signup">
       <h1 style="padding-bottom: 50px;">Crie uma conta</h1>
-      <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-bottom: 15px;">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome:" style="font-weight: 900;">
+      <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-bottom: 5px;">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome:">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="email" class="form-label">Email</label>
@@ -28,6 +29,8 @@
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Sua password:">
+        <!-- Têm de usar uma palavra passe entre 8 a 20 caracteres;<br>
+        Inclua no mínimo uma letra maiúscula, letra minúscula, número e um caractere especial. -->
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
         <label for="password" class="form-label">Repita password</label>
@@ -51,6 +54,9 @@
             }
             else if($errormessage == 'badname') {
               echo '<strong>Erro: </strong> Apenas pode letras e espaços.';
+            }
+            else if($errormessage == 'badpassword') {
+              echo '<strong>Erro: </strong> Confirme a sua password e siga as regras de password.';
             }
             else if($errormessage == 'passwordcheck') {
               echo '<strong>Erro: </strong> Confirme a password.';
