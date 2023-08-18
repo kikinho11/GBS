@@ -1,5 +1,9 @@
-@import url("mainPage.css"); /* Main Page CSS */
-
-@import url("signup.css"); /* Login Page CSS */
-
 @import url("navbar.css"); /* Navbar CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}

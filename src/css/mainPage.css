@@ -1,12 +1,3 @@
-html {
-  /* scroll-padding-top: 120px; */
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Raleway', sans-serif;
-}
-
 .center-div1 {
   padding-top: 34vh;
   padding-bottom: 34vh;

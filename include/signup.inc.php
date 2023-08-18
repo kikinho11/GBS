@@ -9,7 +9,7 @@
     $passwordRepeat = $_POST['password-repeat'];
   
     if (empty($name) || empty($email) || empty($password) || empty($passwordRepeat)) {
-        header("Location: http://www.localhost/web/gbs/signup.php?error=emptyfields");
+        header("Location: ../signup.php?error=emptyfields");
         exit();
     }
     else if (!filter_var($email, FILTER_SANITIZE_EMAIL))
