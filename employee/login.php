@@ -11,20 +11,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
   <title>GBS IT Solutions</title>
-  <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../src/icons/favicon.ico" type="image/x-icon">
 </head>
 
-<body style="height: 100%; background-color: #121212 ;">
+<body style="height: 100%;">
   <div class="w-100 h-100 text-center center-div4">
     <form class="text-white text-center " action="../include/login.employee.inc.php" method="post">
       <input type="hidden" name="login" value="login">
-      <h1 style="padding-bottom: 50px;">Entrar na conta de funcionário</h1>
+      <h1 style="padding-bottom: 50px; color: black;">Entrar na conta de funcionário</h1>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 5px;">
-        <label for="username" class="form-label">Username</label>
+        <label style="color: black;" for="username" class="form-label">Username</label>
         <input type="username" class="form-control" id="username" name="username" placeholder="Seu username:">
       </div>
       <div class="col-4 position-relative start-50 end-50 translate-middle text-start" style="padding-top: 10px;">
-        <label for="password" class="form-label">Senha</label>
+        <label style="color: black;" for="password" class="form-label">Senha</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Sua senha:">
         <!-- Têm de usar uma palavra passe entre 8 a 20 caracteres;<br>
         Inclua no mínimo uma letra maiúscula, letra minúscula, número e um caractere especial. -->

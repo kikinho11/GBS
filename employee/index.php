@@ -30,7 +30,7 @@
 
     <div class="center-div1 w-100 overflow-hidden bg-wave" id="home" style="height: 819px;">
       <div class="row d-flex justify-content-center">
-        <div class="text-center" style="color: white;">
+        <div class="text-center" style="color: black;">
           <h1 class="">Página funcionário super secreta</h1>
           <h2 class="display-6 mb-5">Text</h2>
         </div>

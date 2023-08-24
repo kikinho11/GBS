@@ -1,5 +1,6 @@
 .navbar {
-  background-color: rgb(6, 21, 81);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,67,147,1) 37%, rgba(0,102,204,1) 77%);
   color: #fff;
   padding: 25px;
   display: flex;
@@ -7,15 +8,15 @@
 }
 
 .navbar-brand {
-  color: #fff;
-  background-color: white;
-  height: 70px;
+  height: 80px;
+  border: none;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
   margin-right: 20px;
+  font-size: large;
   font-weight: 600;
 }
 

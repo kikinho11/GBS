@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
   <title>GBS IT Solutions</title>
-  <link rel="shortcut icon" href="src/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon">
 </head>
 
 <body style="height: 100%; background-color: #121212 ;">
