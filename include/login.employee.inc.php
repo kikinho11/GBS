@@ -52,6 +52,7 @@ if (isset($_POST['login'])) {
           $_SESSION['ID'] = $row['ID'];
           $_SESSION['UserName'] = $row['UserName'];
           $_SESSION['Email'] = $row['Email'];
+          $_SESSION['Cargo'] = $row['Cargo'];
 
           header("Location: ../employee/index.php");
           exit();

@@ -18,12 +18,52 @@
   padding-bottom: 25vh;
 }
 
+.center-div6 {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+
+.box-white{
+  background-color: transparent;
+  width: 1200px;
+  /* height: 400px; */
+  border: 2px solid rgba(255,255,255,.5);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px rgba(0, 0, 0,.5);
+  margin: 0px auto 0px auto;
+}
+
+.bg-home {
+  background-image: url("../img/fundo_home.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-sobre {
+  background-image: url("../img/fundo_sobre.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bg-servicos {
-  background-color: rgb(37, 150, 190);
+  background-image: url("../img/fundo_servicos.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-cases {
-  background-color: #854DFF;
+  background-image: url("../img/fundo_cases.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 /* .main-page {
