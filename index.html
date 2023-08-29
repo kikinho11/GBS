@@ -12,6 +12,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
   <title>GBS IT Solutions</title>
   <link rel="shortcut icon" href="./src/icons/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+            $('#telefone').on('blur', function() {
+                var numero = $(this).val().replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+                var formatadoNumero = '';
+
+                if (numero.length === 11) {
+                    // Formatação para número de celular
+                    formatadoNumero = '(' + numero.substr(0, 2) + ') ' + numero.substr(2, 5) + '-' + numero.substr(7);
+                } else if (numero.length === 10) {
+                    // Formatação para número fixo
+                    formatadoNumero = '(' + numero.substr(0, 2) + ') ' + numero.substr(2, 4) + '-' + numero.substr(6);
+                } else {
+                    // Não é possível determinar o tipo de número
+                    formatadoNumero = numero;
+                }
+
+                $(this).val(formatadoNumero);
+            });
+        });
+  </script>
+
 </head>
 
 <body>
@@ -62,6 +87,14 @@
         <div class="text-center mt-5" style="color: white;">
           <h2 class="display-6 mb-2" style="font-weight: 500;">Seja bem-vindo ao nosso universo de Tecnologia da Informação!</h2>
         </div>
+        <div class="banner_column" style="text-align: end; margin-right: 50px; margin-top: 50px;">
+          <ul>
+            <li><a href="https://www.instagram.com"><img src="./src/icons/instagram.png" style="height: 35px; margin-right: 5px;"/></a></li>
+            <li><a href="https://www.linkedin.com"><img src="./src/icons/linkedin.png" style="height: 40px;"></a></li>
+            <li><a href="https://www.twitter.com"><img src="./src/icons/twitter.png" style="height: 40px;"></a></li>
+            <li><a href="https://www.whatsapp.com"><img src="./src/icons/whatsapp.png" style="height: 40px;"></a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -94,75 +127,37 @@
       </div>
     </div>
 
-    <div class="center-div3 w-100 overflow-hidden bg-wave" id="contato" style="height: 819px;">
-      <div class="row d-flex justify-content-center">
-        <div class="text-center mt-5">
-          <h1 class="" style="padding-bottom: 60px;">Contato</h1>
-
-          <form>
-            <div class="col-4 position-relative start-50 end-50 translate-middle" style="padding-bottom: 15px;">
-              <label for="name" class="form-label ">Nome</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Seu nome:">
-            </div>
-            <div class="col-4 position-relative start-50 end-50 translate-middle" style="padding-bottom: 22px;">
-              <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Seu email:">
-            </div>
-            <div class="col-4 position-relative start-50 end-50 translate-middle">
-              <label for="texto" class="form-label">Pergunta</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <button type="submit position-relative start-50 end-50 translate-middle" class="btn btn-primary">Enviar</button>
-          </form>
-          <!-- <form>
-            <div class="input-group mb-3">
-              <div class="col-4">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+    <div class="center-div6 w-100 overflow-hidden bg-contato" id="contato" style="height: 819px;">
+      <h1 class="text-center" style="padding-bottom: 60px; font-weight: 600;">Com o que nós podemos ajudar hoje?</h1>
+        <div class="row">
+          <div class="box-white mx-auto col-10 col-md-8 col-lg-6">
+            <form>
+              <div class="input-group text-center mt-3 mb-3" style="margin-left: 155px;">
+                <div class="col-4 me-5">
+                  <label for="inputEmail4" class="form-label">Nome*</label>
+                  <input type="text" class="form-control" id="inputEmail4" required>
+                </div>
+                <div class="col-4">
+                  <label for="telefone" class="form-label">Telefone*</label>
+                  <input type="text" class="form-control telefone" id="telefone" required placeholder="(XX) XXXX-XXXX ou (XX) XXXXX-XXXX">
+                </div>
               </div>
-              <div class="col-4">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+              <div class="input-group text-center mb-3" style="margin-left: 380px;">
+                <div class="col-4">
+                  <label for="inputAddress" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="inputAddress" placeholder="exemplo@exemplo.com" required>
+                </div>
               </div>
-            </div>
-
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-6">
-              <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-              <label for="inputState" class="form-label">State</label>
-              <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
+              <div class="col-4 mb-3 text-center" style="margin-left: 380px;">
+                <label for="texto" class="form-label">Pergunta</label>
+                <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-          </form> -->
+              <div class="col-12 text-center mb-3">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
 
-        </div>
       </div>
     </div>
 
