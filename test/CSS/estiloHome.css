@@ -8,9 +8,9 @@
 section{
     width: 100%;
     height: 100vh;
-    background-image: url("https://images2.alphacoders.com/104/thumb-1920-1042582.jpg");
+    background-image: url("/src/img/fundo_home.jpeg");
     background-size: cover;
-    background-position: center;
+    background-position: flex;
 }
 
 section nav{
@@ -19,7 +19,8 @@ section nav{
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 10px #089da1;
-    background: #fff;
+    border: 5px;
+    background: #0805b8d3;
     position: fixed;
     left: 0;
     z-index: 100;
@@ -42,11 +43,11 @@ section nav li{
 
 section nav li a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 section nav li a:hover{
-    color: #089da1;
+    color: #494949;
     transition: .1s;
 }
 
@@ -72,32 +73,35 @@ section nav .social_icon input:hover{
 }
 
 section .main{
-    display:flex;
-    width: 600px;
-    height: 230px;
-    top: 180px;
-    left: 800px;
-    background: white;
-    opacity: 0.9;
+    display:relative;
+    width: 500px;
+    height: 220px;
+    top: 280px;
+    left: 500px;
+    background: rgba(8, 38, 202, 0.993);
+    opacity: 0.90;
     backdrop-filter: blur(3px);
-    border: 1px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px white;
+    border: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(50, 8, 167);
     align-items: center;
+    text-align: center;
     justify-content: space-around;
     position: relative;
 }
 
 section .main h1{
-    position: relative;
+    position: flex;
+    margin-left: 20px;
     font-size: 80px;
     top: 0px;
-    left: 80px;
+    left: 10px;
     color: black;
 }
 
-section .main h1 span{
-    color: #089da1;
+section .main h2 {
+    color: #ffffff;
+    text-align: center;
     text-decoration: solid;
 }
 
@@ -139,13 +143,14 @@ section .main .main_img img{
     left: 60px;
 }
 
-.services{
-    width: 100%;
+/* Estilos para a seção de serviços */
+.services {
+    width: 90%;
     height: auto;
     margin: 35px 0;
 }
 
-.services .services_box{
+.services_box {
     width: 95%;
     margin: 0 auto;
     display: flex;
@@ -153,8 +158,8 @@ section .main .main_img img{
     justify-content: space-around;
 }
 
-.services .services_box .services_cards1{
-    text-align: center;
+.services_cards {
+    text-align: justify;
     width: 310px;
     height: auto;
     border: 1px solid;
@@ -162,46 +167,47 @@ section .main .main_img img{
     color: black;
     background-color: transparent;
     padding: 15px 10px;
+    transition: box-shadow 0.3s, color 0.3s;
 }
 
-.services .services_box .services_cards1:hover{
+.services_cards:hover {
     text-decoration: underline;
-    box-shadow: 0 0 5px red;
-    color: red;
+    box-shadow: 0 0 5px rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
 }
 
-.services .services_box .services_cards1 ion-icon{
-    width: 50px;
-    height: 50px;
-}
-
-.services .services_box .services_cards{
-    text-align: center;
-    width: 310px;
-    height: auto;
-    border: 1px solid;
-    border-radius: 5px;
-    color: black;
-    background-color: transparent;
-    padding: 15px 10px;
-}
-
-.services .services_box .services_cards:hover{
-    text-decoration: underline;
-    box-shadow: 0 0 5px rgb(7, 198, 213);
-    color: #089da1;
-}
-
-.services .services_box .services_cards i{
+.services_cards i {
     font-size: 45px;
     margin-bottom: 15px;
     cursor: pointer;
 }
 
-.services .services_box .services_cards h3{
+.services_cards h3 {
     margin-bottom: 10px;
+    font-size: 20px; /* Aumenta a legibilidade do título */
 }
-.services .services_box .services_cards ion-icon{
+
+/* Estilos específicos para o primeiro cartão */
+.services_cards1 {
+    text-align: justify;
+    width: 350px;
+    height: auto;
+    border: 1px solid;
+    border-radius: 5px;
+    color: rgb(3, 3, 3);
+    background-color: transparent;
+    padding: 15px 10px;
+    transition: box-shadow 0.3s, color 0.3s;
+}
+
+.services_cards1:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 5px rgb(17, 0, 255);
+    color: rgb(17, 0, 255);
+}
+
+/* Estilos para ícones */
+.services_cards ion-icon {
     width: 50px;
     height: 50px;
 }
@@ -422,7 +428,7 @@ section .main .main_img img{
 
 footer{
     width: 100%;
-    background: grey;
+    background: rgb(6, 68, 184);
 }
 
 footer .footer_main{
