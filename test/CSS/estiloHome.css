@@ -468,9 +468,9 @@ footer .footer_main .tag a{
 
 footer .footer_main .tag .social_link ion-icon{
     display: flex;
-    margin: 0 5px;
+    margin: 0 6px;
     width: 40px;
-    height: 60px;
+    height: 40px;
     color: white;
 }
 
