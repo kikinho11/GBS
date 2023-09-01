@@ -11,11 +11,9 @@ section{
     background-image: url("/src/img/fundo_home.jpeg");
     background-size: cover;
     background-position: flex;
-}
+  }
 
-
-
-section nav{
+nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -28,32 +26,32 @@ section nav{
     z-index: 100;
 }
 
-section nav .logo img{
+nav .logo img{
     width: 120px;
     margin: 8px 0;
 }
 
-section nav ul{
+nav ul{
     list-style: none;
     font-size: 20px;
 }
 
-section nav li{
+nav li{
     display: inline-block;
     padding: 0 10px;
 }
 
-section nav li a{
+nav li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-section nav li a:hover{
+nav li a:hover{
     color: #494949;
     transition: .1s;
 }
 
-section nav .social_icon input{
+nav .social_icon input{
     width: 200px;
     height: 40px;
     position: relative;
@@ -62,14 +60,14 @@ section nav .social_icon input{
     border-radius: 20px;
 }
 
-section nav .social_icon ion-icon{
+nav .social_icon ion-icon{
     position: relative;
     width: 30px;
     height: 30px;
     top: 10px;
 }
 
-section nav .social_icon input:hover{
+nav .social_icon input:hover{
     color: #089da1;
     cursor: pointer;
 }
@@ -482,9 +480,13 @@ footer .footer_main .tag .social_link ion-icon{
     margin: 0 6px;
     width: 45px;
     height: 45px;
+    width: 45px;
+    height: 45px;
     color: white;
     margin-right: 45px; /* Espaço entre os ícones e os nomes */
 }
+
+
 .social_link {
     display: flex;
 }
