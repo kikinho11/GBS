@@ -1,12 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['id_usuario']))
-    {
-        header("location: index.php");
-        exit;
-    }
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -58,11 +49,9 @@
             <h2>
                 Missão:
             </h2>
-            <h3>
                 <p>
                     Utilizar a coragem para enfrentar os desafios tecnológicos do mundo atual, fornecendo soluções de TI inovadoras e eficazes. Nosso compromisso é capacitar nossos clientes a superar obstáculos com confiança, oferecendo ferramentas e serviços que impulsionem sua transformação digital.
-                </p>
-            </h3>    
+                </p>   
             </div>
           
         <div class="services_cards">
@@ -79,97 +68,117 @@
             <h3>
                 Valores: 
             </h3>
-
             <p>
-                Coragem: Abraçamos desafios complexos e desconhecidos com coragem, enfrentando-os de frente e encontrando oportunidades de crescimento. Encorajamos a inovação e a exploração de novos territórios tecnológicos, sempre prontos para aprender com os riscos e triunfos.
+            Coragem: Abraçamos desafios complexos e desconhecidos com coragem, enfrentando-os de frente e encontrando oportunidades de crescimento. Encorajamos a inovação e a exploração de novos territórios tecnológicos, sempre prontos para aprender com os riscos e triunfos.
             </p>
-
             <p style="display: none;" id="texto-escondido"> 
-                
                 Força: Nossa força reside na integridade e na resiliência com que enfrentamos cada projeto e situação. Comprometemo-nos a entregar soluções robustas e confiáveis, refletindo a força de nossa dedicação à qualidade e ao profissionalismo em todas as etapas.
             <br>
                 Sabedoria: Valorizamos a sabedoria como um guia para tomar decisões informadas e estratégicas. Investimos na constante expansão de nosso conhecimento técnico e entendimento das necessidades do mercado de TI. Compartilhamos essa sabedoria com nossos clientes, orientando-os para a melhor tomada de decisão em meio a opções complexas.
             </p>
-            <button id="saber-mais">Saiba mais</button>
+            <br>
+            <button class="btn btn-setas seta-b icon-hand-o-right" id="saber-mais">Veja mais</button>
             </div>
         </div>
     </div>
 </div> 
-<!--Sobre nós-->
+    <!--Sobre nós-->
 
-<!-- Serviços -->
-<section id="serviços">
-  <div class="main">
-      <div class="main_tag">
-          <h1>
-              <span>
-                  GBS
-              </span>
-          </h1>
-          <h2>
-              <span>
-                  "Nosso compromisso é o seu sucesso: Suporte de TI que vai além das expectativas." 
-              </span>
-          </h2>
-      </div>
-  </div>
-  </section>
-<!-- Serviços-->
+    <!-- Serviços -->
+    <section id="serviços">
+    
+    </section>
+    <!-- Serviços-->
 
-<!-- Cases de sucesso -->
-<section id="cases_de_sucesso">
-  <div class="main">
-      <div class="main_tag">
-          <h1>
-              <span>
-                  GBS
-              </span>
-          </h1>
-          <h2>
-              <span>
-                  "Nosso compromisso é o seu sucesso: Suporte de TI que vai além das expectativas." 
-              </span>
-          </h2>
-      </div>
-  </div>
-</section>
-<!-- Cases de sucesso -->
+    <!-- Cases de sucesso -->
+    <section id="cases_de_sucesso">
 
-<!-- Equipe -->
-<section id="equipe">
-  <div class="main">
-      <div class="main_tag">
-          <h1>
-              <span>
-                  GBS
-              </span>
-          </h1>
-          <h2>
-              <span>
-                  "Nosso compromisso é o seu sucesso: Suporte de TI que vai além das expectativas." 
-              </span>
-          </h2>
-      </div>
-  </div>
-  </section>
-  <!-- Equipe -->
+    </section>
+    <!-- Cases de sucesso -->
+
+    <!-- Equipe -->
+    <section id="equipe">
+    
+    </section>
+    <!-- Equipe -->
+
+    <!--Box Formulario--> 
+    <div class="box-formulario">        
+        <div class="formulario">
+            <div class="title-form">
+              <h1>Fale Conosco</h1>
+            </div>
+            <form action="#" method="post">
+                     
+                <span>
+                    <input type="text" class="input-balao-up" id="nome" name="nome" placeholder="Nome" autocomplete="off" required=""/>
+                    <label for="nome"> <i class="icon icon-user-outline"></i> </label>
+                </span>
+                <span>
+                    <input type="text" class="input-balao-up" id="email" name="email" placeholder="Telefone" autocomplete="off" required=""/>
+                    <label for="email"> <i class="icon icon-mail-3"></i> </label>
+                </span>
+                <span>
+                    <input type="text" class="input-balao-up" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
+                    <label for="email"> <i class="icon icon-mail-3"></i> </label>
+                </span>
+                <span>
+                    <input type="text" class="input-balao-up" id="assunto" name="assunto" placeholder="Assunto" autocomplete="off" required=""/>
+                    <label for="assunto"> <i class="icon icon-info"></i> </label>
+                </span>
+                <span>
+                    <textarea type="text" class="textarea-balao-up" id="mensagem" name="mensagem" rows="3" placeholder="Mensagem" autocomplete="off" required=""></textarea>
+                    <label for="mensagem"> <i class="icon icon-bubble-4"></i> </label>
+                </span>
+                <div class="box-btn">
+                     
+                    <button type="submit" class="btn-envia zoom-shadow">
+                        <i class="icon icon-forward-1"> Enviar</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+<!--Box Formulario--> 
 
     <!--rodapé-->
-    <footer id="contato">
-        <div class="footer_main">
-            <div class="tag">
-                <img src="../src/img/gbs-branco.png">
-                <p>
-                </p>
-            </div>
-
-            <div class="tag">
-                <h1>Contato</h1>
-                <a href="#"><ion-icon name="call"></ion-icon> (21)00000-1111</a>
-                <a href="#"><ion-icon name="mail"></ion-icon> gbs@email.com</a>
-            </div>
-            <div class="tag">
-                <h1>Nós acompanhe nas redes:</h1>
+    <div class="footer-triangulo">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+        </svg>
+    </div>
+    
+    <footer class="main_footer container">
+        
+        <div class="content">
+            
+            <div class="colfooter">
+                
+                <h4 class="titleFooter"><i class="icon icon-menu"></i> Menu</h4>
+                
+                <ul>
+                
+                  <li><a href="#" title="Página Inícial">Página Inícial</a></li>
+                  <li><a href="#" title="Sobre a Empresa">Sobre a Empresa</a></li>
+                  <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+                
+                </ul>
+            
+            </div><!--Col Footer 1-->        
+            
+            <div class="colfooter">
+               
+               <h4 class="titleFooter"><i class="icon icon-mail-2"></i> Contato</h4>
+               <p><i class="icon icon-mail"></i> contato@outlook.com</p>
+               <p><i class="icon icon-phone"></i> 21 90000-0000</p>
+               <p><i class="icon icon-whatsapp"></i> 21 90000-0000</p>
+            
+            </div><!--Col Footer 2-->
+            
+            <div class="colfooter">
+               
+                <h4 class="titleFooter"> Nós acompanhe nas redes:</h4>
+                
                 <div class="social_link">
                     <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
 
@@ -180,9 +189,23 @@
                     <a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
 
                 </div>
-            </div>
+            
+            </form>
+            
+            </div><!--Col Footer 3-->
+            
+            <div class="clear"></div>
+        
+        </div><!--Contant-->
+        
+        <div class="main_footer_copy">
+            
+            <p class="m-b-footer"> &copy; GBS IT CONSULT - 2023, todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: GBS IT TEAM
+        
         </div>
     </footer>
+    <!--Fecha Footer-->
     
     <script src="script/buton.js"></script>
     <script src="script/mainPage.js"></script>
