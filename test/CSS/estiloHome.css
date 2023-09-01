@@ -13,6 +13,8 @@ section{
     background-position: flex;
 }
 
+
+
 section nav{
     width: 100%;
     display: flex;
@@ -20,7 +22,7 @@ section nav{
     justify-content: space-around;
     box-shadow: 0 0 10px #089da1;
     border: 5px;
-    background: #0805b8d3;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,67,147,1) 37%, rgba(0,102,204,1) 77%);
     position: fixed;
     left: 0;
     z-index: 100;
@@ -73,11 +75,10 @@ section nav .social_icon input:hover{
 }
 
 section .main{
-    display:relative;
     width: 500px;
     height: 220px;
-    top: 280px;
-    left: 500px;
+    top: 50%;
+    left: 50%;
     background: rgba(8, 38, 202, 0.993);
     opacity: 0.90;
     backdrop-filter: blur(3px);
@@ -144,6 +145,10 @@ section .main .main_img img{
 }
 
 /* Estilos para a seção de serviços */
+section .services * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .services {
     width: 90%;
     height: auto;
@@ -160,7 +165,7 @@ section .main .main_img img{
 
 .services_cards {
     text-align: justify;
-    width: 310px;
+    width: 350px;
     height: auto;
     border: 1px solid;
     border-radius: 5px;
@@ -168,6 +173,12 @@ section .main .main_img img{
     background-color: transparent;
     padding: 15px 10px;
     transition: box-shadow 0.3s, color 0.3s;
+}
+
+@media screen and (max-width: 1200px) {
+  .services_cards {
+    width: 300px;
+  }
 }
 
 .services_cards:hover {
