@@ -480,13 +480,23 @@ footer .footer_main .tag a{
 footer .footer_main .tag .social_link ion-icon{
     display: flex;
     margin: 0 6px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     color: white;
+    margin-right: 45px; /* Espaço entre os ícones e os nomes */
+}
+.social_link {
+    display: flex;
+}
+
+.social_link a {
+    display: flex;
+    align-items: center;
 }
 
 footer .footer_main .tag .social_link ion-icon:hover{
     color: #089da1;
 
 }
+
 
