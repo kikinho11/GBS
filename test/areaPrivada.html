@@ -7,6 +7,30 @@
     <title>GBS INFO TEC</title>
     <link rel="stylesheet" href="CSS/estiloHome.css">
     <link rel="shortcut icon" href="/src/icons/favicon_1.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+              $('#telefone').on('input', function() {
+                  var numero = $(this).val().replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+                  var formatadoNumero = '';
+  
+                  if (numero.length === 11) {
+                      // Formatação para número de celular
+                      formatadoNumero = '(' + numero.substr(0, 2) + ') ' + numero.substr(2, 5) + '-' + numero.substr(7);
+                  } else if (numero.length === 10) {
+                      // Formatação para número fixo
+                      formatadoNumero = '(' + numero.substr(0, 2) + ') ' + numero.substr(2, 4) + '-' + numero.substr(6);
+                  } else {
+                      // Não é possível determinar o tipo de número
+                      formatadoNumero = numero;
+                  }
+  
+                  $(this).val(formatadoNumero);
+              });
+          });
+    </script>
 </head>
 <body>
   <nav>
@@ -103,7 +127,7 @@
     <!-- Equipe -->
 
     <!--Box Formulario--> 
-    <div class="box-formulario">        
+    <div class="box-formulario" id="contato">        
         <div class="formulario">
             <div class="title-form">
               <h1>Fale Conosco</h1>
@@ -115,8 +139,8 @@
                     <label for="nome"> <i class="icon icon-user-outline"></i> </label>
                 </span>
                 <span>
-                    <input type="text" class="input-balao-up" id="email" name="email" placeholder="Telefone" autocomplete="off" required=""/>
-                    <label for="email"> <i class="icon icon-mail-3"></i> </label>
+                    <input type="text" class="input-balao-up" id="telefone" name="telefone" placeholder="Telefone" autocomplete="off" required=""/>
+                    <label for="telefone"> <i class="icon icon-mail-3"></i> </label>
                 </span>
                 <span>
                     <input type="text" class="input-balao-up" id="email" name="email" placeholder="E-mail" autocomplete="off" required=""/>
@@ -209,7 +233,7 @@
         </div>
     </footer>
     <!--Fecha Footer-->
-    
+
     <script src="script/buton.js"></script>
     <script src="script/mainPage.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
