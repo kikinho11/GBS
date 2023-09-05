@@ -11,8 +11,7 @@
     background-image: url("/src/img/fundo_home.jpeg");
     background-size: cover;
     background-position: flex;
-  }
-
+}
 
 nav {
     width: 100%;
@@ -118,6 +117,15 @@ section .main p{
     color: black;
 }
 
+.topo-site {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+}
+
 
 
 
@@ -143,7 +151,7 @@ section .services * {
 .services_cards {
     text-align: justify;
     width: 350px;
-    height: auto;
+    height: 300px;
     border: 1px solid;
     border-radius: 5px;
     color: rgb(0, 0, 0);
@@ -174,23 +182,7 @@ section .services * {
     font-size: 20px; /* Aumenta a legibilidade do título */
 }
 
-/* Estilos específicos para o primeiro cartão */
-.services_cards1 {
-    text-align: justify;
-    width: 350px;
-    height: auto;
-    border: 1px solid;
-    border-radius: 5px;
-    color: rgb(3, 3, 3);
-    background-color: transparent;
-    padding: 15px 10px;
-    transition: box-shadow 0.3s, color 0.3s;
-}
 
-.services_cards1:hover {
-    box-shadow: 0 0 5px rgb(17, 0, 255);
-    color: rgb(17, 0, 255);
-}
 
 /* Estilo para Serviços */
 .grid-container {
@@ -203,6 +195,12 @@ section .services * {
   border: 1px solid #ccc;
   padding: 20px;
   text-align: center;
+  justify-content: center;
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 5px rgb(17, 0, 255);
+  color: rgb(17, 0, 255);
 }
 
 .grid-item img {
@@ -215,7 +213,6 @@ section .services * {
 
 
 /*footer*/
-
 footer{
     width: 100%;
     background: rgb(0, 34, 95);
@@ -333,6 +330,8 @@ footer .footer_main .tag a{
 	left: 83%;
 	opacity: 1;
 }
+
+
 /* Box Formulario */
 .title-form h1 {
   
@@ -373,7 +372,7 @@ footer .footer_main .tag a{
     font-weight: 400;
     z-index: 5;
     display: block;
-    background-color: #7bd7fc;
+    background-color: rgb(0, 124, 255);
   }
   .box-formulario {
       width: 100%;
@@ -382,12 +381,12 @@ footer .footer_main .tag a{
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      background-color: #7bd7fc;
+      background-color: rgb(0, 124, 255);
       padding:60px 0;
   }
   .formulario {
       width: 700px;
-      background: #7bd7fc;
+      background: rgb(0, 124, 255);
       padding: 60px 5%;
       text-align: center;
   }
