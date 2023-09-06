@@ -20,7 +20,7 @@ navLinks.forEach(el => {
       console.log(targetId);
       const targetSection = document.querySelector(targetId);
       console.log(targetSection);
-      const offset = targetSection.offsetTop - 70; // 120 is the height of the navbar
+      const offset = targetSection.offsetTop - 120; // 120 is the height of the navbar
       
       if (targetSection) {
         window.scrollTo({

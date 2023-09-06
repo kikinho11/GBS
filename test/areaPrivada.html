@@ -44,19 +44,35 @@
     <img src="./imagens/up-arrow.png" height="50px" width="50px">
   </button>
 
-  <nav>
-    <a class="logo" href="areaPrivada.html">
-      <img src="../src/img/gbs-branco.png" height="100%" width="100%">
-    </a>
-    <ul>
-      <li><a class="link-nav" href="#home">HOME</a></li>
-      <li><a class="link-nav" href="#sobre_nos">A GBS</a></li>
-      <li><a class="link-nav" href="#serviços">SERVIÇOS</a></li>
-      <li><a class="link-nav" href="#cases_de_sucesso">CASES</a></li>
-      <li><a class="link-nav" href="#equipe">NOSSO TIME</a></li>
-      <li><a class="link-nav" href="#contato">CONTATO</a></li>
-    </ul>
+  <nav class="navbar" id="navbar">
+    <div class="logo">
+        <a class="logo" href="areaPrivada.html">
+            <img src="../src/img/gbs-branco.png" height="50px" width="120px">
+        </a>
+    </div>
+    <div class="nav-link">
+        <ul>
+            <li><a class="link-nav" href="#home">HOME</a></li>
+            <li><a class="link-nav" href="#sobre_nos">A GBS</a></li>
+            <li><a class="link-nav" href="#serviços">SERVIÇOS</a></li>
+            <li><a class="link-nav" href="#cases_de_sucesso">CASES</a></li>
+            <li><a class="link-nav" href="#equipe">NOSSO TIME</a></li>
+            <li><a class="link-nav" href="#contato">CONTATO</a></li>
+        </ul>
+        <div class="dropdown" id="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+                <a href="#home">HOME</a>
+                <a href="#sobre_nos">A GBS</a>
+                <a href="#serviços">SERVIÇOS</a>
+                <a href="#cases_de_sucesso">CASES</a>
+                <a href="#equipe">NOSSO TIME</a>
+                <a href="#contato">CONTATO</a>
+            </div>
+        </div>
+    </div>
   </nav>
+
   <section id="home">
     <div class="main">
       <h1>SOLUÇÕES DE TI SOB MEDIDA</h1>
@@ -64,21 +80,32 @@
 
       <div class="social" style="text-align: center;">
         <ul>
-          <li><a href="https://www.instagram.com"><img src="./imagens/icons/instagram.png" style="height: 60px;"/></a></li>
-          <li><a href="https://www.linkedin.com"><img src="./imagens/icons/linkedin.png" style="height: 60px;"></a></li>
-          <li><a href="https://www.twitter.com"><img src="./imagens/icons/twitter.png" style="height: 60px;"></a></li>
-          <li><a href="https://www.whatsapp.com"><img src="./imagens/icons/whatsapp.png" style="height: 60px;"></a></li>
+          <li><a href="https://www.instagram.com"><img src="./imagens/icons/instagram-branco.png" style="height: 65px;"/></a></li>
+          <li><a href="https://www.whatsapp.com"><img src="./imagens/icons/whatsapp-branco.png" style="height: 60px;"></a></li>
+          <li><a href="https://www.linkedin.com"><img src="./imagens/icons/linkedin-branco.png" style="height: 60px;"></a></li>
+          <li><a href="https://www.twitter.com"><img src="./imagens/icons/twitter-branco.png" style="height: 60px;"></a></li>
         </ul>
       </div>
 
       <br><br><br><br><br><br>
 
-      <div class="serviços-home">
-        <p>Skgjmagka</p>
-      </div>
-
     </div>
   </section>
+
+  <div class="serviços-home">
+    <div class="serviços-grid">
+      <img src="./imagens/icons/servidores.png">
+      <h3 class="serviços-texto">ADMINISTRAÇÃO DE <br> <bold>SERVIDORES</bold></h3>
+    </div>
+    <div class="serviços-grid">
+      <img src="./imagens/icons/solucoes.png">
+      <h3 class="serviços-texto" style="text-align: justify;">SOLUÇÕES <br>PERSONALIZADAS</h3>
+    </div>
+    <div class="serviços-grid">
+      <img src="./imagens/icons/consultoria.png">
+      <h3 class="serviços-texto">CONSULTORIA <br>DE T. I.</h3>
+    </div>
+  </div>
 
 <!--Sobre nós-->
     <div class="services" id="sobre_nos">
@@ -266,6 +293,18 @@
         </div>
     </footer>
     <!--Fecha Footer-->
+
+
+    <script>
+      document.getElementById("dropdown").addEventListener("click", function () {
+          var dropdownContent = document.querySelector(".dropdown-content");
+          if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+          } else {
+              dropdownContent.style.display = "block";
+          }
+      });
+    </script>
 
     <script src="script/buton.js"></script>
     <script src="script/mainPage.js"></script>
