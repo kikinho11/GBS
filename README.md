@@ -2,5 +2,5 @@
 
 # Information about this repository
 
-- This is a website for GBS
+- This is a website for GBS (The current website is in the test folder)
 (More information in the future)
